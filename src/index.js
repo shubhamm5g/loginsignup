@@ -41,13 +41,13 @@ app.post('/signup',async (req,res)=>{
 app.post('/login',async (req,res)=>{
 
     try{
-        const check=await collection.findOne({name:req.body.name,password:req.body.password})
+        const check=await collection.findOne({username:req.body.name,password:req.body.password})
 
-        if(check.password===req.body.password && check.name==req.body.name){
+        if(check.password===req.body.password && check.username==req.body.name){
             res.render("home")
         }
         else{
-            res.send("worng password")
+            res.alert("worng password")
         }
     }
     catch{
