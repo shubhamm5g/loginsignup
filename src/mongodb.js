@@ -35,6 +35,6 @@ const LogInSchema = new mongoose.Schema({
     }
 })
 
-const collection = new mongoose.model('Basic Members Information',LogInSchema)
 
-module.exports=collection
+
+module.exports=mongoose.model('Basic Members Information',LogInSchema)

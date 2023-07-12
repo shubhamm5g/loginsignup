@@ -63,7 +63,7 @@ header .nav-bar ul li a{
 
 /* page1 section start */
 .page1{
-    background: url(/docs/background-photo.jpg);
+    background: url(/background-photo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 81.1vh;
